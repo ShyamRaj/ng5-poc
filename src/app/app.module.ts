@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { DataTablesModule } from 'angular-datatables';
 
 import { DataService } from './data.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -45,7 +48,10 @@ import { CalendarComponent } from './calendar/calendar.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    HttpModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    DataTablesModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

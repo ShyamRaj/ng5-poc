@@ -1,3 +1,110 @@
-<p>
-  calendar works!
-</p>
+<div class="page-header">
+  <h2>Calendar</h2>
+  <ol class="breadcrumb">
+    <li><a routerLink="">Home</a></li>
+    <li class="active">Calendar</li>
+  </ol>
+</div>
+<div class="calendar-app">
+  <div class="row">
+    <div class="col-lg-3 col-md-4">
+      <div class="row">
+        <div class="col-md-12 col-sm-6 col-xs-12 co-xs-pull-12">
+          <!-- START panel-->
+          <div class="card">
+            <div class="card-header">
+              <h2>Draggable Events</h2>
+            </div>
+            <!-- Default external events list-->
+            <div class="external-events-trash">
+              <div class="body">
+                <div class="external-events">
+                  <div class="bg-red">Lunch</div>
+                  <div class="bg-cyan">Go home</div>
+                  <div class="bg-indigo">Do homework</div>
+                  <div class="bg-orange">Work on UI design</div>
+                  <div class="bg-blue">Sleep tight</div>
+                </div>
+                <p>
+                  <input type="checkbox" id="remove-after-drop" class="filled-in chk-col-cyan">
+                  <label for="remove-after-drop"><span></span>Remove after Drop</label>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END panel-->
+        </div>
+        <div class="col-md-12 col-sm-6 col-xs-12 co-xs-push-12">
+          <!-- START panel-->
+          <div class="card">
+            <div class="card-header">
+              <h2>Create Event</h2>
+            </div>
+            <div class="body">
+              <div class="input-group mb">
+                <input type="text" placeholder="Event name..." class="form-control external-event-name">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-primary external-event-add-btn">Add</button>
+                </div>
+              </div>
+              <p class="text-muted">
+                <small>Choose a Color</small>
+              </p>
+              <ul class="list-inline external-event-color-selector">
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-danger cirkle-xl selected"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-primary cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-info cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-success cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-warning cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-pink cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-blue cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-teal cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-gray cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-brown cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-yellow cirkle-xl"></a>
+                </li>
+                <li class="padding-0">
+                  <a href="#" class="cirkle cirkle-purple cirkle-xl"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- END panel-->
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-8">
+      <!-- START panel-->
+      <div class="card">
+        <div class="body">
+          <!-- START calendar-->
+          <div id="calendar"></div>
+          <!-- END calendar-->
+        </div>
+      </div>
+      <!-- END panel-->
+    </div>
+  </div>
+  <!-- END row-->
+</div>

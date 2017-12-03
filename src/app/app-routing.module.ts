@@ -16,49 +16,20 @@ import {UserComponent} from './user/user.component';
 import {CalendarComponent} from './calendar/calendar.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  },
-  {
-    path: 'kit',
-    component: KitComponent,
-    children: [
-      {path: 'supply-items', component: SupplyItemsComponent},
-      {path: 'ctm-facility-setup', component: CtmFacilitySetupComponent},
-      {path: 'new-ctm-order', component: NewCtmOrderComponent},
-      {path: 'edit-ctm-order', component: EditCtmOrderComponent},
-      {path: 'ctm-facility-daily-staffing', component: CtmFacilityDailyStaffingComponent}
-    ]
-  },
-  {
-    path: 'contact-us',
-    component: ContactUsComponent
-  },
-  {
-    path: 'back-office',
-    component: BackOfficeComponent
-  },
-  {
-    path: 'operations',
-    component: OperationsComponent
-  },
-  {
-    path: 'logistics',
-    component: LogisticsComponent
-  },
-  {
-    path: 'study-management',
-    component: StudyManagementComponent
-  },
-  {
-    path: 'user',
-    component: UserComponent
-  },
-  {
-    path: 'calendar',
-    component: CalendarComponent
-  }
+  {path: '', component: HomeComponent},
+  {path: 'kit', component: KitComponent},
+  {path: 'back-office', component: BackOfficeComponent},
+  {path: 'contact-us', component: ContactUsComponent},
+  {path: 'operations', component: OperationsComponent},
+  {path: 'logistics', component: LogisticsComponent},
+  {path: 'study-management', component: StudyManagementComponent},
+  {path: 'user', component: UserComponent},
+  {path: 'calendar', component: CalendarComponent},
+  {path: 'kit/supply-items', component: SupplyItemsComponent},
+  {path: 'kit/ctm-facility-setup', component: CtmFacilitySetupComponent},
+  {path: 'kit/new-ctm-order', component: NewCtmOrderComponent},
+  {path: 'kit/edit-ctm-order', component: EditCtmOrderComponent},
+  {path: 'kit/ctm-facility-daily-staffing', component: CtmFacilityDailyStaffingComponent}
 ];
 
 @NgModule({
