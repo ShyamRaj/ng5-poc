@@ -24,6 +24,7 @@
         "assets/plugins/node-waves/waves.css",
         "assets/plugins/animate-css/animate.css",
         "assets/plugins/spinkit/spinkit.css",
+        "../node_modules/datatables.net-dt/css/jquery.dataTables.css",
         "assets/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css",
         "assets/plugins/jquery-datatable/skin/bootstrap/css/responsive.bootstrap.min.css",
         "assets/plugins/calendar/fullcalendar.css",

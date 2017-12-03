@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../data.service';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {Order} from '../../order';
+import {DataService} from '../../data.service';
 
 @Component({
   selector: 'app-new-ctm-order',
@@ -7,12 +9,23 @@ import { DataService } from '../../data.service';
   styleUrls: ['./new-ctm-order.component.scss']
 })
 export class NewCtmOrderComponent implements OnInit {
-  orders: any;
+  order = new Order();
+  orders: Order[] = [];
 
-  constructor(private _data: DataService) { }
+  constructor(private router: Router, private _data: DataService) {
+  }
 
   ngOnInit() {
     this._data.order.subscribe(res => this.orders = res);
   }
 
+  addOrder() {
+    this.order.id = Math.floor(Math.random() * 20000);
+    this.order.ship_date = Date.now();
+    this.order.stat_order = true;
+
+    this.orders.push(this.order);
+    this._data.changeOrder(this.orders);
+    this.router.navigate(['kit']);
+  }
 }
