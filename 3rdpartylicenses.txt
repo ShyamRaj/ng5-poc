@@ -70,3 +70,7 @@ THE SOFTWARE.
 @angular/core@5.0.0
 MIT
 MIT
+
+datatables.net-dt@1.10.16
+MIT
+MIT
