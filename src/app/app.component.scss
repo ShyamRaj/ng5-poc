@@ -1,0 +1,42 @@
+.sideBar-nav-links {
+  font-size: 2rem;
+}
+
+.nav.navbar-nav.navbar-right .chip {
+  background-color: #ffffff !important;
+}
+
+.user-chip {
+  padding-top: 16px !important;
+  padding-bottom: 10px !important;
+}
+
+.chip-ellipse {
+  width: 123px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper > footer, .wrapper > section {
+    margin-left: 0px;
+  }
+
+  .aside:not(:empty) ~ section {
+    margin-left: 260px;
+  }
+  .aside:not(:empty) ~ footer {
+    margin-left: 260px;
+  }
+  // the following code does not work
+  //.aside-collapsed > .aside:not(:empty) ~ section {
+  //  margin-left: 70px;
+  //}
+  //.aside-collapsed > .aside:not(:empty) ~ footer {
+  //  margin-left: 70px;
+  //}
+}
+
+
+

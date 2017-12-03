@@ -16,7 +16,7 @@
     <nav role="navigation" class="navbar topnavbar">
       <!-- START navbar header-->
       <div class="navbar-header">
-        <a href="index.html" class="navbar-brand">
+        <a routerLink="" class="navbar-brand">
           <div class="brand-logo">
             <img src="assets/images/logo.png" alt="Admin Logo" class="img-responsive">
           </div>
@@ -31,10 +31,10 @@
         <!-- START Left navbar-->
         <ul class="nav navbar-nav">
           <li>
-            <a href="#" data-trigger-resize="" data-toggle-state="aside-collapsed" class="hidden-xs">
+            <a href="javascript:;" data-trigger-resize="" data-toggle-state="aside-collapsed" class="hidden-xs">
               <em class="material-icons">menu</em>
             </a>
-            <a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
+            <a href="javascript:;" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
               <em class="material-icons">menu</em>
             </a>
           </li>
@@ -43,12 +43,12 @@
         <!-- START Right Navbar-->
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="#" data-search-open="">
+            <a href="javascript:void(0);" data-search-open="">
               <em class="material-icons">search</em>
             </a>
           </li>
           <li class="visible-lg">
-            <a href="#" data-toggle-fullscreen="">
+            <a href="javascript:void(0);" data-toggle-fullscreen="">
               <em class="material-icons">fullscreen</em>
             </a>
           </li>
@@ -63,7 +63,7 @@
               <li class="body">
                 <ul class="menu">
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <div class="icon-circle bg-red">
                           <i class="material-icons">done</i>
@@ -76,7 +76,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <div class="icon-circle bg-indigo">
                           <i class="material-icons">add</i>
@@ -89,7 +89,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <div class="icon-circle bg-blue">
                           <i class="material-icons">alarm</i>
@@ -102,7 +102,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <div class="icon-circle bg-orange">
                           <i class="material-icons">thumb_up</i>
@@ -115,7 +115,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <div class="icon-circle bg-green">
                           <i class="material-icons">cached</i>
@@ -128,7 +128,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <div class="icon-circle bg-grey">
                           <i class="material-icons">settings</i>
@@ -162,7 +162,7 @@
               <li class="body">
                 <ul class="menu media-list">
                   <li class="media unread">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <img class="media-object img-circle" width="32" src="assets/images/mail/nine.jpg" alt="user">
                       </div>
@@ -174,7 +174,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <img class="media-object img-circle" width="32" src="assets/images/mail/2.jpg" alt="user">
                       </div>
@@ -186,7 +186,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <img class="media-object img-circle" width="32" src="assets/images/mail/five.jpg" alt="user">
                       </div>
@@ -198,7 +198,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <img class="media-object img-circle" width="32" src="assets/images/mail/1.jpg" alt="user">
                       </div>
@@ -210,7 +210,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <img class="media-object img-circle" width="32" src="assets/images/mail/seven.jpg" alt="user">
                       </div>
@@ -222,7 +222,7 @@
                     </a>
                   </li>
                   <li class="media unread">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <img class="media-object img-circle" width="32" src="assets/images/mail/three.jpg" alt="user">
                       </div>
@@ -234,7 +234,7 @@
                     </a>
                   </li>
                   <li class="media">
-                    <a href="#">
+                    <a href="javascript:void(0);">
                       <div class="media-left">
                         <img class="media-object img-circle" width="32" src="assets/images/mail/two.jpg" alt="user">
                       </div>
@@ -254,8 +254,11 @@
           </li>
           <!-- #END# Task -->
           <li>
-            <a href="#" data-toggle-state="offsidebar-open" data-no-persist="true">
-              <em class="material-icons">more_vert</em>
+            <a routerLink="user" aria-hidden="true" class="user-chip">
+              <div class="chip chip-ellipse">
+                <img src="../assets/images/mail/one.jpg" alt="Logged in user name">
+                Shyam Rajendran
+              </div>
             </a>
           </li>
         </ul>
@@ -274,50 +277,7 @@
     </nav>
     <!-- END Top Navbar-->
   </header>
-  <!-- sidebar-->
-  <aside class="aside">
-    <!-- START Sidebar (left)-->
-    <div class="aside-inner">
-      <nav data-sidebar-anyclick-close="" class="sidebar">
-        <!-- START sidebar nav-->
-        <ul class="nav menu">
-          <!-- Iterates over all sidebar items-->
-          <li class="nav-heading ">
-            <span>MAIN NAVIGATION</span>
-          </li>
-          <li>
-            <a href="#dashboard" title="Dashboard" data-toggle="collapse" class="menu-toggle">
-              <em class="material-icons">dashboard</em>
-              <span>Dashboard</span>
-            </a>
-            <ul id="dashboard" class="nav sidebar-subnav collapse">
-              <li class="sidebar-subnav-header">Dashboard</li>
-              <li>
-                <a href="index.html" title="Dashboard v1">
-                  <span>Version 1</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#layout" title="Layouts" data-toggle="collapse" class="menu-toggle">
-              <em class="material-icons">computer</em>
-              <span>Layouts</span>
-            </a>
-            <ul id="layout" class="nav sidebar-subnav collapse">
-              <li class="sidebar-subnav-header">Layouts</li>
-              <li>
-                <a href="pages/layout/l_no_fixed.html" title="No Fixed">
-                  <span>Layout No Fixed</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <!-- END sidebar nav-->
-      </nav>
-    </div>
-    <!-- #END# Sidebar (left)-->
+  <aside class="aside" *ngIf="isHome" app-layout>
   </aside>
   <!-- Main section-->
   <section>
@@ -325,11 +285,6 @@
     <div class="content-wrapper">
       <div class="container-fluid">
         <div class="page-header">
-          <h2>DASHBOARD</h2>
-          <ul>
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="about">About</a></li>
-          </ul>
           <router-outlet></router-outlet>
         </div>
       </div>
