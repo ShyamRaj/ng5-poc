@@ -1,3 +1,99 @@
-<p>
-  new-ctm-order works!
-</p>
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card card-hidden-controls">
+      <div class="card-header bg-pink">
+        <h2>
+          Create CTM Order
+        </h2>
+        <tr *ngFor="let order of orders">
+          <td>{{ order.id }}</td>
+        </tr>
+        <ul class="card-controls m-r-5">
+          <li><a href="javascript:void(0);" class="card-fullscreen"><i class="material-icons">fullscreen</i></a></li>
+        </ul>
+      </div>
+      <div class="body">
+        <form class="row">
+          <div class="col-md-6">
+
+            <div class="form-group form-float">
+              <div class="form-line">
+                <label>Study</label>
+                <select class="form-control show-tick" data-live-search="true">
+                  <option>Select Study</option>
+                  <option>Study 1</option>
+                  <option>Study 2</option>
+                  <option>Study 3</option>
+                  <option>Study 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group addon-line">
+                <div class="form-line">
+                  <input type="text" class="form-control" placeholder="Site">
+                </div>
+                <span class="input-group-addon"><i class="material-icons">search</i></span>
+              </div>
+            </div>
+            <div class="form-group form-float">
+              <div class="form-line">
+                <input type="text" class="form-control">
+                <label class="form-label">Shipment</label>
+              </div>
+            </div>
+            <div class="form-group form-float">
+              <div class="form-line">
+                <input type="text" class="form-control">
+                <label class="form-label">Status</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group form-float">
+              <div class="form-line">
+                <label>Type</label>
+                <select class="form-control show-tick" data-live-search="true">
+                  <option>Select Order Type</option>
+                  <option>Initial</option>
+                  <option>Resupply</option>
+                  <option>Type 3</option>
+                  <option>Type 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-float">
+              <div class="form-line">
+                <input type="text" class="form-control">
+                <label class="form-label">Date</label>
+              </div>
+            </div>
+            <div class="form-group form-float">
+              <div class="form-line">
+                <input type="text" class="form-control">
+                <label class="form-label">CTM Facility</label>
+              </div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" class="filled-in"
+                       id="dmy_checkbox">
+                <label for="dmy_checkbox">PM Approval Status</label>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Import Approval Status</label>
+                <label class="form-label">&nbsp;<b>n/a</b></label>
+            </div>
+            <div class="form-group">
+              <input type="radio" id="start_order" name="order" class="with-gap">
+              <label for="start_order">Start Order</label>
+
+              <input type="radio" id="hold" name="order" class="with-gap">
+              <label for="hold" class="m-l-20">Hold</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary waves-effect pull-right createCTMOrder btn-lg">Create</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
