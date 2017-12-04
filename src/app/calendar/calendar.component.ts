@@ -25,7 +25,7 @@ const colors: any = {
 @Component({
   selector: 'mwl-demo-component',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  styleUrls: ['calendar.component.scss'],
+  styleUrls: ['./calendar.component.scss'],
   templateUrl: './calendar.component.html'
 })
 export class CalendarComponent implements OnInit {
@@ -99,6 +99,7 @@ export class CalendarComponent implements OnInit {
 
   ngOnInit() {
     console.log('Rest Call');
+    // TODO: Have to move this to a service
     this.http.get('https://lotfops-qa-cluster.eastus.cloudapp.azure.com/KitProduction/CtmServiceApi/CTM/GetCtmSlottingDateByFacility?slotDateCount=10000&facilityId=183d0951-04a6-46c8-b6c0-47899e62ba98&startDate=2017-11-01')
       .map(res => res.json().body || {})
       .subscribe(payload => {

@@ -1,7 +1,7 @@
 <div class="row clearfix">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="card card-hidden-controls">
-      <div class="card-header bg-pink">
+      <div class="card-header bg-grey">
         <h2>
           Create CTM Order
         </h2>
@@ -12,74 +12,62 @@
       <div class="body">
         <form class="row" (ngSubmit)="addOrder()">
           <div class="col-md-6">
-            <div class="form-group form-float">
-              <div class="form-line">
-                <label>Study</label>
-                <select class="form-control show-tick" data-live-search="true" [(ngModel)]="order.study" name="study">
-                  <option>Select Study</option>
-                  <option>Study 1</option>
-                  <option>Study 2</option>
-                  <option>Study 3</option>
-                  <option>Study 4</option>
-                </select>
-              </div>
+            <div class="material-group">
+              <input class="inputMaterial" type="text" [(ngModel)]="order.study" name="study" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="material-label">Study</label>
             </div>
-            <div class="form-group">
-              <div class="input-group addon-line">
-                <div class="form-line">
-                  <input type="text" class="form-control" placeholder="Site" [(ngModel)]="order.site" name="site">
-                </div>
-                <span class="input-group-addon"><i class="material-icons">search</i></span>
-              </div>
+            <div class="material-group">
+              <input class="inputMaterial" type="text" [(ngModel)]="order.site" name="site" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="material-label">Site</label>
             </div>
-            <div class="form-group form-float">
-              <div class="form-line">
-                <input type="text" class="form-control" [(ngModel)]="order.shipment" name="shipment">
-                <label class="form-label">Shipment</label>
-              </div>
+            <div class="material-group">
+              <input class="inputMaterial" type="text" [(ngModel)]="order.shipment" name="shipment" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="material-label">Shipment</label>
             </div>
-            <div class="form-group form-float">
-              <div class="form-line">
-                <input type="text" class="form-control" [(ngModel)]="order.status" name="status">
-                <label class="form-label">Order Status</label>
-              </div>
+            <div class="material-group">
+              <input class="inputMaterial" type="text" [(ngModel)]="order.status" name="status" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="material-label">Order Status</label>
+            </div>
+            <div class="material-group">
+              <input class="inputMaterial" type="text" [(ngModel)]="order.type" name="type" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="material-label">Order Type</label>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="form-group form-float">
-              <div class="form-line">
-                <label>Type</label>
-                <select class="form-control show-tick" data-live-search="true" [(ngModel)]="order.type" name="type">
-                  <option>Select Order Type</option>
-                  <option>Initial</option>
-                  <option>Resupply</option>
-                  <option>Type 3</option>
-                  <option>Type 4</option>
-                </select>
-              </div>
+            <div class="material-group">
+              <input class="inputMaterial" type="text" [(ngModel)]="order.date" name="date" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="material-label">Date</label>
             </div>
-            <div class="form-group form-float">
-              <div class="form-line">
-                <input type="text" class="form-control" [(ngModel)]="order.date" name="date">
-                <label class="form-label">Date</label>
-              </div>
-            </div>
-            <div class="form-group form-float">
-              <div class="form-line">
-                <input type="text" class="form-control" [(ngModel)]="order.ctm_facility" name="ctm_facility">
-                <label class="form-label">CTM Facility</label>
-              </div>
+            <div class="material-group">
+              <input class="inputMaterial" type="text" [(ngModel)]="order.ctm_facility" name="ctm_facility" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label class="material-label">CTM Facility</label>
             </div>
             <div class="form-group">
-                <input type="checkbox" class="filled-in" id="dmy_checkbox" [(ngModel)]="order.pm_approval_status" name="pm_approval_status">
-                <label for="dmy_checkbox">PM Approval Status</label>
+              <div class="ms-hover">
+                <input type="checkbox" class="chk-col-green" id="todo6" [(ngModel)]="order.pm_approval_status" name="pm_approval_status" required>
+                <label for="todo6"><span>PM Approval Status</span></label>
+              </div>
             </div>
             <div class="form-group">
                 <label class="form-label">Import Approval Status</label>
                 <label class="form-label">&nbsp;<b>{{order.import_approval_status}}</b></label>
             </div>
             <div class="form-group">
-              <input type="radio" id="start_order" name="stat_order" class="with-gap">
+              <input type="radio" id="start_order" name="stat_order" class="with-gap radio-col-green">
               <label for="start_order">Stat Order</label>
 
               <input type="radio" id="hold" name="stat_order" class="with-gap">

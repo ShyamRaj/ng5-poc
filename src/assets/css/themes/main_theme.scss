@@ -814,13 +814,13 @@
 
 /********* Top Navbar **************/
 .theme-teal .topnavbar {
-    background-color: #fff;
+  background-color: #fff;
 }
 .theme-teal .topnavbar .navbar-header {
-    background-color: #009688;
+  background-color: #009688;
 }
 .theme-teal .topnavbar .navbar-nav > li > .navbar-text {
-    color: #009688;
+  color: #009688;
 }
 .theme-teal .topnavbar .navbar-nav > li > a,
 .theme-teal .topnavbar .navbar-nav > .open > a {
@@ -1357,6 +1357,112 @@
 .dark.theme-amber .sidebar-subnav > li.active > .nav-item:after {
     border-color: #795548;
     background-color: #795548;
+}
+
+
+/************************
+        Theme dark-grey
+************************/
+$dark-grey: rgba(0, 119, 105, 0.59);
+/********* Top Navbar **************/
+.theme-dark-grey .topnavbar {
+  background-color: #fff;
+}
+.theme-dark-grey .topnavbar .navbar-header {
+  background-color: $dark-grey;
+}
+.theme-dark-grey .topnavbar .navbar-nav > li > .navbar-text {
+  color: $dark-grey;
+}
+.theme-dark-grey .topnavbar .navbar-nav > li > a,
+.theme-dark-grey .topnavbar .navbar-nav > .open > a {
+  color: $dark-grey;
+}
+/********* Top Navbar **************/
+.theme-dark-grey .topnavbar {
+  background-color: #fff;
+}
+.theme-dark-grey .topnavbar .navbar-header {
+  background-color: $dark-grey;
+}
+.theme-dark-grey .topnavbar .navbar-nav > li > .navbar-text {
+  color: $dark-grey;
+}
+.theme-dark-grey .topnavbar .navbar-nav > li > a,
+.theme-dark-grey .topnavbar .navbar-nav > .open > a {
+  color: $dark-grey;
+}
+.theme-dark-grey .topnavbar .navbar-nav > li > a:hover,
+.theme-dark-grey .topnavbar .navbar-nav > .open > a:hover,
+.theme-dark-grey .topnavbar .navbar-nav > li > a:focus,
+.theme-dark-grey .topnavbar .navbar-nav > .open > a:focus {
+  color: $dark-grey;
+}
+.theme-dark-grey .topnavbar .navbar-nav > .active > a,
+.theme-dark-grey .topnavbar .navbar-nav > .open > a,
+.theme-dark-grey .topnavbar .navbar-nav > .active > a:hover,
+.theme-dark-grey .topnavbar .navbar-nav > .open > a:hover,
+.theme-dark-grey .topnavbar .navbar-nav > .active > a:focus,
+.theme-dark-grey .topnavbar .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+.theme-dark-grey .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {
+  color: #fff;
+}
+.theme-dark-grey .navbar-brand {
+  color: #fff; }
+.theme-dark-grey .navbar-brand:hover {
+  color: #fff; }
+.theme-dark-grey .navbar-brand:active {
+  color: #fff; }
+.theme-dark-grey .navbar-brand:focus {
+  color: #fff; }
+.theme-dark-grey .topnavbar .nav-wrapper {
+  background-color: $dark-grey;
+}
+@media only screen and (min-width: 768px) {
+  .theme-dark-grey .topnavbar {
+    background-color: rgba(77, 78, 83, 0.61);
+  }
+  .theme-dark-grey .topnavbar .navbar-nav > .open > a,
+  .theme-dark-grey .topnavbar .navbar-nav > .open > a:hover,
+  .theme-dark-grey .topnavbar .navbar-nav > .open > a:focus {
+    box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset;
+  }
+  .theme-dark-grey .topnavbar .navbar-nav > li > .navbar-text {
+    color: #fff;
+  }
+  .theme-dark-grey .topnavbar .navbar-nav > li > a,
+  .theme-dark-grey .topnavbar .navbar-nav > .open > a {
+    color: #fff;
+  }
+  .theme-dark-grey .topnavbar .navbar-nav > li > a:hover,
+  .theme-dark-grey .topnavbar .navbar-nav > .open > a:hover,
+  .theme-dark-grey .topnavbar .navbar-nav > li > a:focus,
+  .theme-dark-grey .topnavbar .navbar-nav > .open > a:focus {
+    color: #fff;
+  }
+}
+/********* Sidebar Light **************/
+.light.theme-dark-grey .sidebar .nav > li.active {
+  border-left-color: $dark-grey;
+}
+.light.theme-dark-grey .sidebar-subnav > li.active > a:after,
+.light.theme-dark-grey .sidebar-subnav > li.active > .nav-item:after {
+  border-color: $dark-grey;
+  background-color: $dark-grey;
+}
+
+/********* Sidebar Dark **************/
+
+.dark.theme-dark-grey .sidebar .nav > li.active {
+  border-left-color: $dark-grey;
+}
+
+.dark.theme-dark-grey .sidebar-subnav > li.active > a:after,
+.dark.theme-dark-grey .sidebar-subnav > li.active > .nav-item:after {
+  border-color: $dark-grey;
+  background-color: $dark-grey;
 }
 
 /************************
