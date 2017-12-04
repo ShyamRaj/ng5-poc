@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import {Component, HostListener, OnInit} from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { DataService } from '../data.service';
 import { Order } from './../order';
@@ -13,10 +12,12 @@ export class KitComponent implements OnInit {
   dtOptions: any = {};
   orders: Order[] = [];
   dtTrigger: Subject<any> = new Subject();
+  innerWidth: document.window.innerWidth;
 
   constructor(private _data: DataService) { }
 
   ngOnInit(): void {
+    console.log('width', this.innerWidth);
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 10,
@@ -32,5 +33,11 @@ export class KitComponent implements OnInit {
 
   deleteOrder(id) {
     this._data.changeOrder(this.orders.filter(obj => obj.id !== id));
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = event.target.innerWidth;
+    this.dtTrigger.next();
   }
 }

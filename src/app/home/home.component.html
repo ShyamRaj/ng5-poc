@@ -1,12 +1,284 @@
-<h2>DASHBOARD</h2>
-<ul>
-  <li><a routerLink="">Home</a></li>
-  <li><a routerLink="kit">Kit</a></li>
-  <li><a routerLink="contact-us">contact-us</a></li>
-  <li><a routerLink="back-office">back-office</a></li>
-  <li><a routerLink="operations">operations</a></li>
-  <li><a routerLink="logistics">logistics</a></li>
-  <li><a routerLink="study-management">study-management</a></li>
-  <li><a routerLink="user">user</a></li>
-  <li><a routerLink="calendar">calendar</a></li>
-</ul>
+<div class="container-fluid">
+    <div class="page-header">
+      <h2>DASHBOARD</h2>
+    </div>
+    <!--row-->
+    <div class="row">
+      <div class="col-xs-3">
+        <a routerLink="kit" class="widget style2 bg-indigo waves-effect">
+          <div class="col-xs-4 widget-icon">
+            <i class="fa fa-medkit"></i>
+          </div>
+          <div class="col-xs-8 widget-body text-right">
+            <h2> Kit Production </h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a routerLink="operations" class="widget style2 bg-red waves-effect">
+          <div class="col-xs-4 widget-icon">
+            <i class="fa fa-gears"></i>
+          </div>
+          <div class="col-xs-8 widget-body text-right">
+            <h2> Operations </h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a routerLink="logistics" class="widget style2 bg-teal waves-effect">
+          <div class="col-xs-4 widget-icon">
+            <i class="fa fa-truck"></i>
+          </div>
+          <div class="col-xs-8 widget-body text-right">
+            <h2> Logistics </h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a routerLink="calendar" class="widget style2 bg-light-blue waves-effect">
+          <div class="col-xs-4 widget-icon">
+            <i class="fa fa-calendar"></i>
+          </div>
+          <div class="col-xs-8 widget-body text-right">
+            <h2> Calendar </h2>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="row"><br/><br/></div>
+    <div class="row">
+      <div class="col-xs-3">
+        <a routerLink="back-office" class="widget style2 bg-orange waves-effect">
+          <div class="col-xs-4 widget-icon">
+            <i class="fa fa-building"></i>
+          </div>
+          <div class="col-xs-8 widget-body text-right">
+            <h2> Back Office </h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a routerLink="study-management" class="widget style2 bg-green waves-effect">
+          <div class="col-xs-4 widget-icon">
+            <i class="fa fa-book"></i>
+          </div>
+          <div class="col-xs-8 widget-body text-right">
+            <h2> Study Management </h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a routerLink="user" class="widget style2 bg-brown waves-effect">
+          <div class="col-xs-4 widget-icon">
+            <i class="fa fa-users"></i>
+          </div>
+          <div class="col-xs-8 widget-body text-right">
+            <h2> User Management </h2>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a routerLink="contact-us" class="widget style2 bg-cyan waves-effect">
+          <div class="col-xs-4 widget-icon">
+            <i class="fa fa-address-book-o"></i>
+          </div>
+          <div class="col-xs-8 widget-body text-right">
+            <h2> Contact Us </h2>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="row"><br/><br/></div>
+    <!--row-->
+    <!--row-->
+    <div class="row">
+      <!-- To DO List -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 masonry-item">
+        <div class="card card-bordered todo_widget">
+          <div class="card-header">
+            <div class="ms-hover pull-left">
+              <input type="checkbox" class="mark-all" id="todo">
+              <label for="todo"><span></span></label>
+            </div>
+            <h2>To Do List / Tasks</h2>
+            <ul class="card-controls m-r--5">
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">more_vert</i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="javascript:void(0);"><i class="material-icons">assistant_photo</i>Action</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul class="list-group list-todo">
+            <li class="list-todo-item">
+              <div class="ms-hover">
+                <input type="checkbox" class="mark-complete" id="todo1">
+                <label for="todo1"><i class="material-icons md-16 v-align-middle" aria-hidden="true">today</i>
+                  <span>Call main Office</span><span class="label label-danger">Today</span>
+                </label>
+              </div>
+            </li>
+            <li class="list-todo-item">
+              <div class="ms-hover">
+                <input type="checkbox" class="mark-complete" id="todo2">
+                <label for="todo2"><i class="material-icons md-16 v-align-middle" aria-hidden="true">notifications</i>
+                  <span>Book hotel for client</span>
+                </label>
+              </div>
+            </li>
+            <li class="list-todo-item">
+              <div class="ms-hover">
+                <input type="checkbox" class="mark-complete" id="todo3">
+                <label for="todo3"><i class="material-icons md-16 v-align-middle" aria-hidden="true">date_range</i>
+                  <span>Call for holiday</span><span class="label label-primary">3days</span>
+                </label>
+              </div>
+            </li>
+            <li class="list-todo-item">
+              <div class="ms-hover">
+                <input type="checkbox" class="mark-complete" id="todo4">
+                <label for="todo4"><span>Breakfast Time</span></label>
+              </div>
+            </li>
+            <li class="list-todo-item">
+              <div class="ms-hover">
+                <input type="checkbox" class="mark-complete" id="todo5">
+                <label for="todo5"><span>Check for updates</span></label>
+              </div>
+            </li>
+            <li class="list-todo-item">
+              <div class="ms-hover">
+                <input type="checkbox" class="mark-complete" id="todo6">
+                <label for="todo6"><span>Recieve shipment</span></label>
+              </div>
+            </li>
+            <li class="list-todo-item">
+              <div class="ms-hover">
+                <input type="checkbox" class="mark-complete" id="todo7">
+                <label for="todo7"><span>Forward this task</span></label>
+              </div>
+            </li>
+            <li class="list-todo-item add-to-input">
+              <input type="text" class="form-control" name="add_todo" id="add_todo" placeholder="Add new task here...">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- #END# To Do List -->
+      <!-- Order Status -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 masonry-item">
+        <div class="card">
+          <div class="card-header">
+            <h2>Order Status</h2>
+            <ul class="card-controls m-r--5">
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">more_vert</i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="javascript:void(0);"><i class="material-icons">assistant_photo</i>Action</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover table-striped">
+              <thead>
+              <tr>
+                <th>Id #</th>
+                <th>Customer</th>
+                <th>Purchase Date</th>
+                <th>Amount (USD)</th>
+                <th>Status</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>Olivia Wilde</td>
+                <td>1/12/2017</td>
+                <td>$222</td>
+                <td>
+                  <span class="label label-success">Shipped</span>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Amelia Wilson</td>
+                <td>1/12/2017</td>
+                <td>$333</td>
+                <td>
+                  <span class="label label-warning">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Emily Walker</td>
+                <td>1/12/2017</td>
+                <td>$72.34</td>
+                <td>
+                  <span class="label label-info">Processing</span>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Matilda Thompson</td>
+                <td>1/12/2017</td>
+                <td>$333.05</td>
+                <td>
+                  <span class="label label-danger">Delivered</span>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Jordan King</td>
+                <td>1/12/2017</td>
+                <td>$222</td>
+                <td>
+                  <span class="label label-success">Shipped</span>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Isabelle Fuhrman</td>
+                <td>1/12/2017</td>
+                <td>$444</td>
+                <td>
+                  <span class="label label-info">Processing</span>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Dylan White</td>
+                <td>1/12/2017</td>
+                <td>$555.09</td>
+                <td>
+                  <span class="label label-danger">Delivered</span>
+                </td>
+              </tr>
+              <tr class="b-b-0">
+                <td>8</td>
+                <td>Miya George</td>
+                <td>1/12/2017</td>
+                <td>$999.99</td>
+                <td>
+                  <span class="label label-success">Shipped</span>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- #END# Order Status -->
+    </div>
+    <!--row-->
+
+</div>
