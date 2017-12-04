@@ -28,6 +28,7 @@
         "assets/plugins/unslider/css/unslider.css",
         "assets/plugins/chartist/css/chartist.min.css",
         "assets/plugins/bootstrap-select/css/bootstrap-select.css",
+        "../node_modules/angular-calendar/css/angular-calendar.css",
         "assets/css/main.scss"
       ],
       "scripts": [

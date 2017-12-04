@@ -1,5 +1,5 @@
 .sideBar-nav-links {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .nav.navbar-nav.navbar-right .chip {
@@ -18,17 +18,28 @@
   text-overflow: ellipsis;
 }
 
-@media only screen and (min-width: 768px) {
-  .wrapper > footer, .wrapper > section {
-    margin-left: 0px;
-  }
+.active-link {
+  background-color: #e2e2e2;
+}
 
-  .aside:not(:empty) ~ section {
-    margin-left: 260px;
-  }
-  .aside:not(:empty) ~ footer {
-    margin-left: 260px;
-  }
+.sideBar-nav-links > span {
+  margin-left: 1rem;
+}
+.sideBar-nav-links > .icon-display {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  //.wrapper > footer, .wrapper > section {
+  //  margin-left: 0px;
+  //}
+  //
+  //.aside:not(:empty) ~ section {
+  //  margin-left: 260px;
+  //}
+  //.aside:not(:empty) ~ footer {
+  //  margin-left: 260px;
+  //}
   // the following code does not work
   //.aside-collapsed > .aside:not(:empty) ~ section {
   //  margin-left: 70px;

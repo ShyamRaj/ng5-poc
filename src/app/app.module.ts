@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { DataTablesModule } from 'angular-datatables';
+import { CalendarModule } from 'angular-calendar';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { CalendarUtilsModule } from './calendar-utils/calendar.module';
 import { DataService } from './data.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
@@ -51,6 +54,9 @@ import { CalendarComponent } from './calendar/calendar.component';
     HttpModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NgbModalModule.forRoot(),
+    CalendarModule.forRoot(),
+    CalendarUtilsModule,
     DataTablesModule
   ],
   providers: [DataService],

@@ -1,110 +1,188 @@
-<div class="page-header">
-  <h2>Calendar</h2>
-  <ol class="breadcrumb">
-    <li><a routerLink="">Home</a></li>
-    <li class="active">Calendar</li>
-  </ol>
-</div>
-<div class="calendar-app">
-  <div class="row">
-    <div class="col-lg-3 col-md-4">
-      <div class="row">
-        <div class="col-md-12 col-sm-6 col-xs-12 co-xs-pull-12">
-          <!-- START panel-->
-          <div class="card">
-            <div class="card-header">
-              <h2>Draggable Events</h2>
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="card-header ctm-order-container">
+        <h2>
+          Calendar
+        </h2>
+      </div>
+      <div class="body" style="padding: 0 20px 20px 20px">
+      <ng-template #modalContent let-close="close">
+        <div class="modal-header">
+          <h5 class="modal-title">Event action occurred</h5>
+          <button type="button" class="close" (click)="close()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            Action:
+            <pre>{{ modalData?.action }}</pre>
+          </div>
+          <div>
+            Event:
+            <pre>{{ modalData?.event | json }}</pre>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" (click)="close()">OK</button>
+        </div>
+      </ng-template>
+
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="btn-group">
+            <div
+              class="btn btn-primary"
+              mwlCalendarPreviousView
+              [view]="view"
+              [(viewDate)]="viewDate"
+              (viewDateChange)="activeDayIsOpen = false">
+              Previous
             </div>
-            <!-- Default external events list-->
-            <div class="external-events-trash">
-              <div class="body">
-                <div class="external-events">
-                  <div class="bg-red">Lunch</div>
-                  <div class="bg-cyan">Go home</div>
-                  <div class="bg-indigo">Do homework</div>
-                  <div class="bg-orange">Work on UI design</div>
-                  <div class="bg-blue">Sleep tight</div>
-                </div>
-                <p>
-                  <input type="checkbox" id="remove-after-drop" class="filled-in chk-col-cyan">
-                  <label for="remove-after-drop"><span></span>Remove after Drop</label>
-                </p>
-              </div>
+            <div
+              class="btn btn-outline-secondary"
+              mwlCalendarToday
+              [(viewDate)]="viewDate">
+              Today
+            </div>
+            <div
+              class="btn btn-primary"
+              mwlCalendarNextView
+              [view]="view"
+              [(viewDate)]="viewDate"
+              (viewDateChange)="activeDayIsOpen = false">
+              Next
             </div>
           </div>
-          <!-- END panel-->
         </div>
-        <div class="col-md-12 col-sm-6 col-xs-12 co-xs-push-12">
-          <!-- START panel-->
-          <div class="card">
-            <div class="card-header">
-              <h2>Create Event</h2>
+        <div class="col-md-4">
+          <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+        </div>
+        <div class="col-md-4">
+          <div class="btn-group">
+            <div
+              class="btn btn-primary"
+              (click)="view = 'month'"
+              [class.active]="view === 'month'">
+              Month
             </div>
-            <div class="body">
-              <div class="input-group mb">
-                <input type="text" placeholder="Event name..." class="form-control external-event-name">
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-primary external-event-add-btn">Add</button>
-                </div>
-              </div>
-              <p class="text-muted">
-                <small>Choose a Color</small>
-              </p>
-              <ul class="list-inline external-event-color-selector">
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-danger cirkle-xl selected"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-primary cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-info cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-success cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-warning cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-pink cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-blue cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-teal cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-gray cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-brown cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-yellow cirkle-xl"></a>
-                </li>
-                <li class="padding-0">
-                  <a href="#" class="cirkle cirkle-purple cirkle-xl"></a>
-                </li>
-              </ul>
+            <div
+              class="btn btn-primary"
+              (click)="view = 'week'"
+              [class.active]="view === 'week'">
+              Week
+            </div>
+            <div
+              class="btn btn-primary"
+              (click)="view = 'day'"
+              [class.active]="view === 'day'">
+              Day
             </div>
           </div>
-          <!-- END panel-->
         </div>
       </div>
-    </div>
-    <div class="col-lg-9 col-md-8">
-      <!-- START panel-->
-      <div class="card">
-        <div class="body">
-          <!-- START calendar-->
-          <div id="calendar"></div>
-          <!-- END calendar-->
-        </div>
+      <br>
+      <div [ngSwitch]="view">
+        <mwl-calendar-month-view
+          *ngSwitchCase="'month'"
+          [viewDate]="viewDate"
+          [events]="events"
+          [refresh]="refresh"
+          [activeDayIsOpen]="activeDayIsOpen"
+          (dayClicked)="dayClicked($event.day)"
+          (eventClicked)="handleEvent('Clicked', $event.event)"
+          (eventTimesChanged)="eventTimesChanged($event)">
+        </mwl-calendar-month-view>
+        <mwl-calendar-week-view
+          *ngSwitchCase="'week'"
+          [viewDate]="viewDate"
+          [events]="events"
+          [refresh]="refresh"
+          (eventClicked)="handleEvent('Clicked', $event.event)"
+          (eventTimesChanged)="eventTimesChanged($event)">
+        </mwl-calendar-week-view>
+        <mwl-calendar-day-view
+          *ngSwitchCase="'day'"
+          [viewDate]="viewDate"
+          [events]="events"
+          [refresh]="refresh"
+          (eventClicked)="handleEvent('Clicked', $event.event)"
+          (eventTimesChanged)="eventTimesChanged($event)">
+        </mwl-calendar-day-view>
       </div>
-      <!-- END panel-->
+
+      <br><br><br>
+
+      <h3>
+        Edit events
+        <button
+          class="btn btn-primary pull-right"
+          (click)="addEvent()">
+          Add new
+        </button>
+        <div class="clearfix"></div>
+      </h3>
+
+      <table class="table table-bordered">
+
+        <thead>
+        <tr>
+          <th>Title</th>
+          <th>Primary color</th>
+          <th>Secondary color</th>
+          <th>Starts at</th>
+          <th>Ends at</th>
+          <th>Remove</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let event of events; let index = index">
+          <td>
+            <input
+              type="text"
+              class="form-control"
+              [(ngModel)]="event.title"
+              (keyup)="refresh.next()">
+          </td>
+          <td>
+            <input
+              type="color"
+              [(ngModel)]="event.color.primary"
+              (change)="refresh.next()">
+          </td>
+          <td>
+            <input
+              type="color"
+              [(ngModel)]="event.color.secondary"
+              (change)="refresh.next()">
+          </td>
+          <td>
+            <mwl-demo-utils-date-time-picker
+              [(ngModel)]="event.start"
+              (ngModelChange)="refresh.next()"
+              placeholder="Not set">
+            </mwl-demo-utils-date-time-picker>
+          </td>
+          <td>
+            <mwl-demo-utils-date-time-picker
+              [(ngModel)]="event.end"
+              (ngModelChange)="refresh.next()"
+              placeholder="Not set">
+            </mwl-demo-utils-date-time-picker>
+          </td>
+          <td>
+            <button
+              class="btn btn-danger"
+              (click)="events.splice(index, 1); refresh.next()">
+              Delete
+            </button>
+          </td>
+        </tr>
+        </tbody>
+
+      </table>
     </div>
   </div>
-  <!-- END row-->
 </div>

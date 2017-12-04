@@ -277,7 +277,27 @@
     </nav>
     <!-- END Top Navbar-->
   </header>
-  <aside class="aside" app-layout>
+  <aside class="aside">
+    <div class="aside-inner">
+      <nav data-sidebar-anyclick-close="" class="sidebar">
+        <!-- START sidebar nav-->
+        <ul class="nav menu">
+          <!-- Iterates over all sidebar items-->
+          <li *ngFor="let route of routes">
+            <a
+              [routerLink]="route.path"
+              [title]="route.text"
+              class="sideBar-nav-links"
+              routerLinkActive="{{route.path === '' ? '' : 'active-link'}}"
+            >
+              <i class="icon-display fa fa-3 fa-{{route.icon}}"></i>
+              <span>{{route.text}}</span>
+            </a>
+          </li>
+        </ul>
+        <!-- END sidebar nav-->
+      </nav>
+    </div>
   </aside>
   <!-- Main section-->
   <section>
