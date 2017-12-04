@@ -25,7 +25,6 @@
         "assets/plugins/animate-css/animate.css",
         "assets/plugins/spinkit/spinkit.css",
         "assets/plugins/calendar/fullcalendar.css",
-        "assets/plugins/unslider/css/unslider.css",
         "assets/plugins/chartist/css/chartist.min.css",
         "assets/plugins/bootstrap-select/css/bootstrap-select.css",
         "../node_modules/angular-calendar/css/angular-calendar.css",
