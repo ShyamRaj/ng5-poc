@@ -12,12 +12,11 @@ export class KitComponent implements OnInit {
   dtOptions: any = {};
   orders: Order[] = [];
   dtTrigger: Subject<any> = new Subject();
-  innerWidth: document.window.innerWidth;
+  innerWidth: any;
 
   constructor(private _data: DataService) { }
 
   ngOnInit(): void {
-    console.log('width', this.innerWidth);
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 10,
