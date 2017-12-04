@@ -17,11 +17,14 @@ export class KitComponent implements OnInit {
   constructor(private _data: DataService) { }
 
   ngOnInit(): void {
-    this._data.order.subscribe(res => this.orders = res);
-
     this.dtOptions = {
+      pagingType: 'full_numbers',
+      pageLength: 10,
+      showEntries: false,
       responsive: true
     };
+
+    this._data.order.subscribe(res => this.orders = res);
     // Calling the DT trigger to manually render the table
     this.dtTrigger.next();
 
