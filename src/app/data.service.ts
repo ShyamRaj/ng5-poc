@@ -20,6 +20,7 @@ export class DataService {
   }
 
   changeOrder(orders) {
+    console.log(orders)
     this.orders.next(orders);
   }
 

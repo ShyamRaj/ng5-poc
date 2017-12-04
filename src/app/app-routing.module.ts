@@ -28,7 +28,7 @@ const routes: Routes = [
   {path: 'kit/supply-items', component: SupplyItemsComponent},
   {path: 'kit/ctm-facility-setup', component: CtmFacilitySetupComponent},
   {path: 'kit/new-ctm-order', component: NewCtmOrderComponent},
-  {path: 'kit/edit-ctm-order', component: EditCtmOrderComponent},
+  {path: 'kit/edit-ctm-order/:id', component: EditCtmOrderComponent},
   {path: 'kit/ctm-facility-daily-staffing', component: CtmFacilityDailyStaffingComponent}
 ];
 

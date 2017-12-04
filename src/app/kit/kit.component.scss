@@ -9,3 +9,13 @@ table.dataTable th.focus, table.dataTable td.focus {
   justify-content: space-between;
   align-items: center;
 }
+
+.table-delete {
+  padding: 0 10px;
+  color: #F44336;
+}
+
+.table-edit {
+  padding: 0 5px 0 10px;
+  color: #673AB7;
+}

@@ -29,4 +29,8 @@ export class KitComponent implements OnInit {
     this.dtTrigger.next();
 
   }
+
+  deleteOrder(id) {
+    this._data.changeOrder(this.orders.filter(obj => obj.id !== id));
+  }
 }
