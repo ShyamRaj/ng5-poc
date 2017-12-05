@@ -10,35 +10,42 @@ body {
 .widget .widget-icon {
   background-color: initial;
 }
-
-.bg-color-purple {
-  background-color: rgb(157, 157, 202) !important;
+.widget .widget-icon i {
+  color: #545454 !important;
 }
 
-.bg-color-red {
-  background-color: rgba(209, 128, 128, 0.9) !important;
+.widget-title, .label {
+  color: #545454 !important;
+}
+
+.bg-color-purple, .label-info {
+  background-color: #dedaff !important;
+}
+
+.bg-color-red, .label-danger {
+  background-color: #ffdada !important;
 }
 
 .bg-color-teal {
-  background-color: rgba(127, 185, 138, 0.9) !important;
+  background-color: rgb(219, 255, 252) !important;
 }
 
-.bg-color-blue {
-  background-color: rgba(119, 165, 185, 0.9) !important;
+.bg-color-blue, .label-primary {
+  background-color: #dbebff !important;
 }
 
-.bg-color-orange {
-  background-color: rgba(210, 178, 116, 0.9) !important;
+.bg-color-orange, .label-warning {
+  background-color: #f9ffda !important;
 }
 
-.bg-color-green {
-  background-color: rgba(110, 165, 140, 0.9) !important;
+.bg-color-green, .label-success {
+  background-color: #e8ffda !important;
 }
 
 .bg-color-brown {
-  background-color: rgba(213, 144, 112, 0.9) !important;
+  background-color: #ffefda !important;
 }
 
 .bg-color-cyan {
-  background-color: rgba(159, 123, 166, 0.9) !important;
+  background-color: #ffe9f5 !important;
 }

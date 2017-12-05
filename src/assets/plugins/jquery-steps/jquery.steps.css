@@ -1,5 +1,5 @@
 /*
-    Common 
+    Common
 */
 
 .wizard,
@@ -139,10 +139,8 @@
 
 .wizard > .content
 {
-    background: #eee;
     display: block;
     margin: 0.5em;
-    min-height: 35em;
     overflow: hidden;
     position: relative;
     width: auto;
@@ -189,7 +187,6 @@
 .wizard > .content > .body input
 {
     display: block;
-    border: 1px solid #ccc;
 }
 
 .wizard > .content > .body input[type="checkbox"]
@@ -222,6 +219,7 @@
     position: relative;
     display: block;
     text-align: right;
+    margin-top: 2rem;
     width: 100%;
 }
 
