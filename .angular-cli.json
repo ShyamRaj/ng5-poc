@@ -28,7 +28,7 @@
         "assets/plugins/calendar/fullcalendar.css",
         "assets/plugins/chartist/css/chartist.min.css",
         "assets/plugins/bootstrap-select/css/bootstrap-select.css",
-        "assets/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css",
+        "assets/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.min.css",
         "assets/plugins/jquery-datatable/skin/bootstrap/css/responsive.bootstrap.min.css",
         "assets/plugins/jquery-datatable/skin/bootstrap/css/scroller.bootstrap.min.css",
         "assets/plugins/jquery-datatable/skin/bootstrap/css/fixedHeader.bootstrap.min.css",
