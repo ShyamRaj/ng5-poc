@@ -6,3 +6,46 @@
 body {
   background-color: #f2f2f2 !important;
 }
+
+.widget .widget-icon {
+  background-color: initial;
+}
+.widget .widget-icon i {
+  color: #545454 !important;
+}
+
+.widget-title, .label {
+  color: #545454 !important;
+}
+
+.bg-color-purple, .label-info {
+  background-color: #dedaff !important;
+}
+
+.bg-color-red, .label-danger {
+  background-color: #ffdada !important;
+}
+
+.bg-color-teal {
+  background-color: rgb(219, 255, 252) !important;
+}
+
+.bg-color-blue, .label-primary {
+  background-color: #dbebff !important;
+}
+
+.bg-color-orange, .label-warning {
+  background-color: #f9ffda !important;
+}
+
+.bg-color-green, .label-success {
+  background-color: #e8ffda !important;
+}
+
+.bg-color-brown {
+  background-color: #ffefda !important;
+}
+
+.bg-color-cyan {
+  background-color: #ffe9f5 !important;
+}

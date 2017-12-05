@@ -23,6 +23,7 @@
         "assets/plugins/bootstrap/css/bootstrap.css",
         "assets/plugins/node-waves/waves.css",
         "assets/plugins/animate-css/animate.css",
+        "assets/plugins/jquery-steps/jquery.steps.css",
         "assets/plugins/spinkit/spinkit.css",
         "assets/plugins/calendar/fullcalendar.css",
         "assets/plugins/chartist/css/chartist.min.css",
@@ -51,6 +52,7 @@
         "assets/js/pages/index_2.js",
         "assets/js/pages/app-view/calendar.js",
         "assets/js/pages/widgets/box-widget.js",
+        "assets/plugins/jquery-steps/jquery.steps.js",
         "assets/js/demo.js",
         "assets/js/layout.js"
       ],

@@ -36,7 +36,7 @@ h6, .h6 {
 .text-muted {
     color: #999 !important;
 }
-$primary: #1e5eaf;
+$primary: #2196F3;
 button,
 input,
 select,
@@ -7323,7 +7323,7 @@ fieldset[disabled] .form-control {
     border: 1px solid #ddd;
     display: block;
     margin: 0.5em;
-    min-height: 35em;
+    height: auto;
     overflow: hidden;
     position: relative;
     width: auto;
@@ -7463,7 +7463,7 @@ fieldset[disabled] .form-control {
 }
 
 .wizard .content {
-    min-height: 245px;
+    min-height: 425px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;

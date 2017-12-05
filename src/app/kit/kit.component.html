@@ -7,33 +7,33 @@
 </div>
 <div class="row clearfix">
   <div class="col-xs-4">
-    <a routerLink="supply-items" class="widget style2 bg-grey waves-effect">
+    <a routerLink="supply-items" class="widget bg-color-green waves-effect">
       <div class="col-xs-4 widget-icon">
         <i class="fa fa-cube"></i>
       </div>
       <div class="col-xs-8 widget-body text-right">
-        <h2> Supply Items </h2>
-        <h2 class="num count-to" data-from="0" data-to="222" data-speed="1000" data-fresh-interval="20">222</h2>
+        <h2 class="widget-title"> Supply Items </h2>
+        <h2 class="num count-to widget-title" data-from="0" data-to="222" data-speed="1000" data-fresh-interval="20">222</h2>
       </div>
     </a>
   </div>
   <div class="col-xs-4">
-    <a routerLink="ctm-facility-setup" class="widget style2 bg-grey waves-effect">
+    <a routerLink="ctm-facility-setup" class="widget bg-color-blue waves-effect">
       <div class="col-xs-4 widget-icon">
         <i class="fa fa-hospital-o"></i>
       </div>
       <div class="col-xs-8 widget-body text-right">
-        <h2> CTM Facility Setup </h2>
+        <h2 class="widget-title"> CTM Facility Setup </h2>
       </div>
     </a>
   </div>
   <div class="col-xs-4">
-    <a routerLink="ctm-facility-daily-staffing" class="widget style2 bg-grey waves-effect">
+    <a routerLink="ctm-facility-daily-staffing" class="widget bg-color-brown waves-effect">
       <div class="col-xs-4 widget-icon">
         <i class="fa fa-group"></i>
       </div>
       <div class="col-xs-8 widget-body text-right">
-        <h2> CTM Facility Daily Staffing </h2>
+        <h2 class="widget-title"> CTM Facility Daily Staffing </h2>
       </div>
     </a>
   </div>
@@ -47,7 +47,10 @@
         <h2>
           CTM Orders
         </h2>
-        <button routerLink="new-ctm-order" type="button" class="btn btn-primary waves-effect btn-lg">Create Order</button>
+        <div>
+          <button routerLink="edit-ctm-order/0023123" type="button" class="btn btn-primary waves-effect btn-lg">Wizard</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button routerLink="new-ctm-order" type="button" class="btn btn-primary waves-effect btn-lg">Create Order</button>
+        </div>
       </div>
       <div class="body" style="padding: 0 20px 20px 20px">
         <table
