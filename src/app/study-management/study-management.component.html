@@ -1,3 +1,90 @@
-<p>
-  study-management works!
-</p>
+<section class="card">
+  <div class="card-header">
+    <h2>Study Management</h2>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="edit-ctm-form">
+        <div class="mb-5">
+          <div id="example-icons" class="cat__wizard">
+            <h3>
+              <span class="">Study</span>
+            </h3>
+            <section class="text-center">
+              <div class="material-group">
+                <input class="inputMaterial" type="text" [(ngModel)]="order.study" name="study" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="material-label">Study</label>
+              </div>
+              <div class="material-group">
+                <input class="inputMaterial" type="text" [(ngModel)]="order.site" name="site" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="material-label">Site</label>
+              </div>
+              <div class="material-group">
+                <input class="inputMaterial" type="text" [(ngModel)]="order.shipment" name="shipment" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="material-label">Shipment</label>
+              </div>
+              <div class="material-group">
+                <input class="inputMaterial" type="text" [(ngModel)]="order.status" name="status" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="material-label">Order Status</label>
+              </div>
+              <div class="material-group">
+                <input class="inputMaterial" type="text" [(ngModel)]="order.type" name="type" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="material-label">Order Type</label>
+              </div>
+            </section>
+            <h3>
+              <span class="cat__wizard__steps__title">Change Status</span>
+            </h3>
+            <section class="text-center">
+              <div class="material-group">
+                <input class="inputMaterial" type="text" [(ngModel)]="order.date" name="date" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="material-label">Date</label>
+              </div>
+              <div class="material-group">
+                <input class="inputMaterial" type="text" [(ngModel)]="order.ctm_facility" name="ctm_facility" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="material-label">CTM Facility</label>
+              </div>
+              <div class="form-group">
+                <div class="ms-hover">
+                  <input type="checkbox" class="chk-col-green" id="todo6" [(ngModel)]="order.pm_approval_status" name="pm_approval_status" required>
+                  <label for="todo6"><span>PM Approval Status</span></label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Import Approval Status</label>
+                <label class="form-label">&nbsp;<b>{{order.import_approval_status}}</b></label>
+              </div>
+              <div class="form-group">
+                <input type="radio" id="start_order" name="stat_order" class="with-gap radio-col-green">
+                <label for="start_order">Stat Order</label>
+
+                <input type="radio" id="hold" name="stat_order" class="with-gap">
+                <label for="hold" class="m-l-20">Hold</label>
+              </div>
+            </section>
+            <h3>
+              <span class="cat__wizard__steps__title">Review</span>
+            </h3>
+            <section class="text-center">
+              <p>Review content before submitting!</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
