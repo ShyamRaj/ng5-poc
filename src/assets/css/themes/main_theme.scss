@@ -1363,13 +1363,13 @@
 /************************
         Theme dark-grey
 ************************/
-$dark-grey: rgba(0, 119, 105, 0.59);
+$dark-grey: rgb(198, 62, 19);
 /********* Top Navbar **************/
 .theme-dark-grey .topnavbar {
   background-color: #fff;
 }
 .theme-dark-grey .topnavbar .navbar-header {
-  background-color: $dark-grey;
+  //background-color: $dark-grey;
 }
 .theme-dark-grey .topnavbar .navbar-nav > li > .navbar-text {
   color: $dark-grey;

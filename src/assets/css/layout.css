@@ -573,9 +573,9 @@ _:-ms-lang(x) {
 .topnavbar {
     position: relative
 }
-.topnavbar .navbar-header {
-    background-color: #23b7e5;
-}
+/*.topnavbar .navbar-header {*/
+    /*background-color: #23b7e5;*/
+/*}*/
 .topnavbar .navbar-header {
     position: relative;
     z-index: 11
@@ -586,11 +586,13 @@ _:-ms-lang(x) {
 }
 .topnavbar .navbar-header .brand-logo {
     display: block;
-    padding: 15px 15px
+    padding: 15px 15px;
+    margin-top: 5px;
 }
 .topnavbar .navbar-header .brand-logo-collapsed {
     display: none;
     padding: 15px 14px;
+    margin-top: 5px;
 }
 .topnavbar .navbar-header .navbar-brand {
     padding: 0;

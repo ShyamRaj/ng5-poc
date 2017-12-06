@@ -25,8 +25,13 @@
 .sideBar-nav-links > span {
   margin-left: 1rem;
 }
+
 .sideBar-nav-links > .icon-display {
   font-size: 2rem;
+}
+
+.aside-collapsed > .sideBar-nav-links {
+  font-size: 3rem;
 }
 
 @media only screen and (min-width: 768px) {

@@ -7,12 +7,38 @@ body {
   background-color: #f2f2f2 !important;
 }
 
+@media only screen and (max-width: 480px) {
+  .widget .widget-icon {
+    background-color: initial;
+    width: 100%;
+  }
+
+  .widget-body {
+    display: none;
+  }
+}
+
+.widget {
+  margin-top: 16px;
+}
+
 .widget .widget-icon {
   background-color: initial;
 }
 .widget .widget-icon i {
   color: #545454 !important;
 }
+
+.widget-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: inherit;
+}
+
 
 .widget-title, .label {
   color: #545454 !important;
