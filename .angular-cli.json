@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "assets/plugins/font-awesome/css/font-awesome.min.css",
+        "assets/plugins/font-awesome/css/font-awesome.css",
         "assets/plugins/bootstrap/css/bootstrap.css",
         "assets/plugins/node-waves/waves.css",
         "assets/plugins/animate-css/animate.css",
@@ -47,7 +47,6 @@
         "assets/plugins/jQuery-Storage-API/jquery.storageapi.js",
         "assets/plugins/jquery-slimscroll/jquery.slimscroll.js",
         "assets/plugins/node-waves/waves.js",
-        "assets/plugins/calendar/fullcalendar.min.js",
         "assets/plugins/bootstrap-select/js/bootstrap-select.js",
         "assets/plugins/jquery-datatable/jquery.dataTables.js",
         "assets/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js",
