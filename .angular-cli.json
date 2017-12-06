@@ -67,7 +67,6 @@
         "assets/plugins/jquery-datatable/extensions/export/responsive.bootstrap.min.js",
         "assets/plugins/jquery-datatable/extensions/export/dataTables.scroller.min.js",
         "assets/plugins/jquery-datatable/extensions/export/dataTables.fixedHeader.min.js",
-        "assets/js/pages/index_2.js",
         "assets/js/pages/app-view/calendar.js",
         "assets/js/pages/widgets/box-widget.js",
         "assets/plugins/jquery-steps/jquery.steps.js",
