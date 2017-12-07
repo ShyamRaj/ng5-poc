@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit, AfterViewChecked} from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { DataService } from '../data.service';
 import { Order } from './../order';
@@ -8,7 +8,7 @@ import { Order } from './../order';
   templateUrl: './kit.component.html',
   styleUrls: ['./kit.component.scss']
 })
-export class KitComponent implements OnInit {
+export class KitComponent implements OnInit, AfterViewChecked {
   dtOptions: any = {};
   orders: Order[] = [];
   dtTrigger: Subject<any> = new Subject();
@@ -28,6 +28,11 @@ export class KitComponent implements OnInit {
     // Calling the DT trigger to manually render the table
     this.dtTrigger.next();
 
+  }
+
+  ngAfterViewChecked() {
+    console.log('checked');
+    this.dtTrigger.next();
   }
 
   deleteOrder(id) {
